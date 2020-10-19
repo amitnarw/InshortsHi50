@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
 
   const page = await browser.newPage();
 
-  await page.goto("https://inshorts.com/en/read", {
+  await page.goto("https://inshorts.com/hi/read", {
     waitUntil: "networkidle2",
   });
   await page.waitForSelector("#load-more-btn");
