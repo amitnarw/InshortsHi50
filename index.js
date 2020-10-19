@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   endpoints(req, res);
 });
 
-app.get("/v1/:category", (req, res) => {
+app.get("/:category", (req, res) => {
   let category = req.params.category;
 
   if (category == "all") all(req, res);
